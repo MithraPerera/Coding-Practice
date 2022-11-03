@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{122DFAE6-BF01-42CC-916C-865DB5FFB114}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HELP.md">
+    <Files>
+      <File FileName="LogAnalysis.cs" Line="23" Column="65" />
+      <File FileName="LogAnalysisTests.cs" Line="40" Column="1" />
+      <File FileName="README.md" Line="42" Column="25" />
+      <File FileName="HELP.md" Line="5" Column="107" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LogAnalysis" expanded="True">
+            <Node name="LogAnalysis" expanded="True">
+              <Node name="HELP.md" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="LogAnalysis" expanded="True">
+            <Node name="LogAnalysis" expanded="True">
+              <Node name="LogAnalysisTests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LogAnalysis PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mithraperera/Exercism/csharp/log-analysis/LogAnalysisTests.cs" relfile="LogAnalysisTests.cs" line="17" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
