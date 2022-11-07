@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z+IfF2FBDhvWWjj06abWKfz79t6DzzPJ9wB/sbWFbWqCrM8Yemf3bhENHNKetZ8va1+q0R95L8DfrPYvgXSrDw==",
+  "dgSpecHash": "09+KLbhcUHFnQTOXrxo/xyG1Udg+/fNg5WIxm845Hf3jLMDY8ZBdmTahkfT/g1wRu5rY7mXlydEXZWHIWhvaCA==",
   "success": true,
   "projectFilePath": "/Users/mithraperera/Exercism/csharp/phone-number-analysis/PhoneNumberAnalysis.csproj",
   "expectedPackageFiles": [
