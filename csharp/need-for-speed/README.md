@@ -112,6 +112,7 @@ car.Drive();
 car.DistanceDriven();
 // => 50
 ```
+
 ## 6. Check if a remote control car can finish a race
 
 To finish a race track, a car has to be able to drive the track's distance. This means not draining its battery before having crossed the finish line. Implement the `RaceTrack.TryFinishTrack()` method that takes a `RemoteControlCar` instance as its parameter and returns `true` if the car can finish the race track; otherwise, return `false`:
@@ -137,3 +138,19 @@ raceTrack.TryFinishTrack(car);
 ### Contributed to by
 
 - @yzAlvin
+
+# 🧠 Things I Learned
+
+- Read-only auto properties are ones that have no setter defined. Thus, you can only set a value in the constructor. Once you are outside the constructor, there is no way to initialize it. Using read-only auto properties gives you more control over what code can access or modify.
+
+- The "this" keyword is typically used to clarify to distinguish between function parameters and class members. Usually, you see this in the constructor.
+
+- Good to use expression-bodied members unless you are working with a style guide that says not to use them.
+
+- Remove TODO's once it is completed to avoid confusing the reader.
+
+- For return battery == 0 || battery < batteryDrain ? true : false, you can remove the ternary operator as the expression would return true or false anyways.
+
+- Always reuse existing methods than re-implementing it in another method.
+
+- If you have a condition inside a while loop, test a compound condition instead to be more efficient.

@@ -2,12 +2,11 @@ using System;
 
 class RemoteControlCar
 {
-  private int speed;
-  private int batteryDrain;
+  private int speed { get; }
+  private int batteryDrain { get; }
   private int distance;
   private int battery = 100;
 
-  // TODO: define the constructor for the 'RemoteControlCar' class
   public RemoteControlCar(int speed, int batteryDrain)
   {
     this.speed = speed;
@@ -16,7 +15,7 @@ class RemoteControlCar
 
   public bool BatteryDrained()
   {
-    return battery == 0 || battery < batteryDrain ? true : false;
+    return battery == 0 || battery < batteryDrain;
   }
 
   public int DistanceDriven()
@@ -26,7 +25,7 @@ class RemoteControlCar
 
   public void Drive()
   {
-    if (battery >= batteryDrain)
+    if (!BatteryDrained())
     {
       distance += speed;
       battery -= batteryDrain;
@@ -44,8 +43,7 @@ class RemoteControlCar
 
 class RaceTrack
 {
-  private int distance;
-  // TODO: define the constructor for the 'RaceTrack' class
+  private readonly int distance;
   public RaceTrack(int distance)
   {
     this.distance = distance;
@@ -53,16 +51,10 @@ class RaceTrack
 
   public bool TryFinishTrack(RemoteControlCar car)
   {
-    bool raceFinished = false;
-    while (!(car.BatteryDrained()))
+    while (!(car.BatteryDrained()) && !(car.DistanceDriven() == this.distance))
     {
       car.Drive();
-      if (car.DistanceDriven() == this.distance)
-      {
-        raceFinished = true;
-        break;
-      }
     }
-    return raceFinished;
+    return car.DistanceDriven() == this.distance;
   }
 }
