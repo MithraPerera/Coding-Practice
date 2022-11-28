@@ -80,8 +80,10 @@ Appointment.AnniversaryDate()
 - @valentin-p
 - @yzAlvin
 
-# 🧠 Things I Learned
+# 🧠 Things I Learned & Mentor Notes
 
 - You can Parse a date and time string into a DateTime object
 - You can access properties on DateTime like Now and Year
 - You can use the TimeSpan object to compare times
+- When returning true or false you can instead just return the boolean expression like in HasPassed and IsAfternoonAppointment method
+- You don't need to include the 0's for initializing a DateTime instance since the 0's are the default when not included
