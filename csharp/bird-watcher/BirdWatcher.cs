@@ -2,40 +2,48 @@ using System;
 
 class BirdCount
 {
-    private int[] birdsPerDay;
+  private int[] birdsPerDay;
 
-    public BirdCount(int[] birdsPerDay)
-    {
-        this.birdsPerDay = birdsPerDay;
-    }
+  public BirdCount(int[] birdsPerDay)
+  {
+    this.birdsPerDay = birdsPerDay;
+  }
 
-    public static int[] LastWeek()
-    {
-        throw new NotImplementedException("Please implement the (static) BirdCount.LastWeek() method");
-    }
+  public static int[] LastWeek()
+  {
+    int[] birds = { 0, 2, 5, 3, 7, 8, 4 };
+    return birds;
+  }
 
-    public int Today()
-    {
-        throw new NotImplementedException("Please implement the BirdCount.Today() method");
-    }
+  public int Today()
+  {
+    return birdsPerDay[birdsPerDay.Length - 1];
+  }
 
-    public void IncrementTodaysCount()
-    {
-        throw new NotImplementedException("Please implement the BirdCount.IncrementTodaysCount() method");
-    }
+  public void IncrementTodaysCount()
+  {
+    birdsPerDay[birdsPerDay.Length - 1] += 1;
+  }
 
-    public bool HasDayWithoutBirds()
+  public bool HasDayWithoutBirds()
+  {
+    foreach (int bird in birdsPerDay)
     {
-        throw new NotImplementedException("Please implement the BirdCount.HasDayWithoutBirds() method");
+      if (bird == 0)
+      {
+        return true;
+      }
     }
+    return false;
+  }
 
-    public int CountForFirstDays(int numberOfDays)
-    {
-        throw new NotImplementedException("Please implement the BirdCount.CountForFirstDays() method");
-    }
+  public int CountForFirstDays(int numberOfDays)
+  {
+    throw new NotImplementedException("Please implement the BirdCount.CountForFirstDays() method");
+  }
 
-    public int BusyDays()
-    {
-        throw new NotImplementedException("Please implement the BirdCount.BusyDays() method");
-    }
+  public int BusyDays()
+  {
+    throw new NotImplementedException("Please implement the BirdCount.BusyDays() method");
+  }
 }
